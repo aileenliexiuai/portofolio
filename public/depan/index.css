@@ -1,0 +1,392 @@
+:root {
+  --dl-color-gray-500: #595959;
+  --dl-color-gray-700: #999999;
+  --dl-color-gray-900: #D9D9D9;
+  --dl-size-size-large: 144px;
+  --dl-size-size-small: 48px;
+  --dl-color-danger-300: #A22020;
+  --dl-color-danger-500: #BF2626;
+  --dl-color-danger-700: #E14747;
+  --dl-color-gray-black: #000000;
+  --dl-color-gray-white: #FFFFFF;
+  --dl-size-size-medium: 96px;
+  --dl-size-size-xlarge: 192px;
+  --dl-size-size-xsmall: 16px;
+  --dl-space-space-unit: 16px;
+  --dl-color-primary-100: #85A0AA;
+  --dl-color-primary-300: #92B6B1;
+  --dl-color-primary-400: #B2C9AB;
+  --dl-color-primary-500: #CDD3B0;
+  --dl-color-primary-700: #788AA3;
+  --dl-color-primary-800: #E8DDB5;
+  --dl-color-primary-200: #788AA3;
+}
+
+
+body {
+  margin: 0; 
+}
+
+.container {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.card {
+  width: 115%; 
+  margin-top: 100px;
+  transition: transform 0.3s ease-in-out; 
+
+}
+
+.skill-icon {
+  font-size: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px; 
+  }
+
+  .card {
+    width: 100%; 
+  }
+}
+
+
+#aboutjudul {
+  text-shadow: 2px 2px 4px var(--dl-color-primary-500);
+  font-size: 60px;
+  font-family: var(--bs-body-font-family);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #666a86;
+  padding-top: 20px; 
+  padding-bottom: 20px; 
+  margin-top: 2rem;
+}
+.my-header {
+  background-color: var(--dl-color-primary-500);
+  position: fixed;
+  top: -70px; 
+  left: 0;
+  width: 100%;
+  height: 70px; 
+  color: var(--dl-color-gray-white); 
+  padding: 10px 20px; 
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+
+}
+
+.my-header:hover {
+  top: 0;
+  background-color: var(--dl-color-primary-500);
+ 
+}
+
+
+.navbar .nav-link {
+  color: var(--dl-color-gray-white); 
+}
+
+.navbar .nama {
+  color: var(--dl-color-gray-white); 
+}
+
+.navbar .nav-link:hover {
+  color: var(--dl-color-primary-700); 
+}
+.profile-card {
+  background-color: var(--dl-color-primary-300);
+  border-radius: 30px;
+  margin-top: 30px; 
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.experience-card{
+  background-color: var(--dl-color-primary-400);
+  border-radius: 30px;
+  margin-top: 30px; 
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.education-card{
+  background-color: var(--dl-color-primary-300);
+  border-radius: 30px;
+  color: var(--dl-color-gray-white); 
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.skills-card{
+  background-color: var(--dl-color-primary-100);
+  border-radius: 30px;
+  color: var(--dl-color-gray-white); 
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.interests-card{
+  background-color: var(--dl-color-primary-200);
+  border-radius: 30px;
+  color: var(--dl-color-gray-white); 
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+textgl{
+  color: var(--dl-color-gray-white);
+
+}
+.publication-card{
+  background-color: var(--dl-color-primary-300);
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.gallery-card {
+  background-color: var(--dl-color-primary-400);
+  border-radius: 30px;
+  margin-bottom: 20px; 
+  padding-bottom: 20px; 
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.gallery-card .cardgmbr:hover {
+  transform: scale(1.1); /* Memperbesar kartu saat hover */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Efek bayangan saat hover */
+  
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transisi saat hover */
+}
+
+
+.card-title {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.gallery-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
+}
+
+.cardgmbr{
+  border-radius: 20px;
+  background-color: white;
+  padding-top: 10px; 
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  margin-top: 10px; 
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-left: 5px;
+}
+
+.card-image {
+  display: flex;
+  justify-content: center; 
+}
+
+.gmbrgmbr {
+  border-radius: 20px;
+  overflow: hidden;
+  object-fit: cover; 
+  width: 100%; 
+  height: 100%; 
+}
+
+
+.card-bodygmbr {
+  position: relative;
+  margin-top: 20px; 
+  border-radius: 30px;
+  height: 250px; 
+  overflow: hidden; 
+}
+
+.navbar .nav-link {
+  color: var(--dl-color-primary-700);
+}
+
+.navbar .nama {
+  color: var(--dl-color-primary-700);
+}
+
+body {
+  background-color: var(--dl-color-primary-800);
+}
+
+.footer {
+  background-color: #d8b899;
+  position: relative; 
+}
+
+.illustration {
+  position: absolute;
+  right: 0;
+  bottom: 300%;
+  transform: translateY(50%);
+  width: 250px; 
+  height: 250px;
+}
+
+.photo-frame-container {
+  justify-content: center;
+  align-items: center; 
+  margin-bottom: 20px; 
+  flex: 1; 
+  display: flex; 
+  justify-content: center;
+}
+
+
+.profileContainer {
+  display: flex; 
+  align-items: center; 
+}
+.photo-frame {
+  border: 10px solid var(--dl-color-primary-200);
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.img-profile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.profileContainer {
+  display: flex;
+  align-items: center; 
+}
+.pita {
+  width: 200px; 
+  height: 250px; 
+  margin-top: 25px;
+}
+
+.left-column {
+  flex: 1; 
+  display: flex;
+  justify-content: center; 
+}
+
+.right-column {
+  flex: 3;
+}
+
+.social-icons .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: var(--dl-color-primary-700);
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.social-icons .social-icon:last-child {
+  margin-right: 0;
+
+}
+
+.social-icons .social-icon:hover {
+  background-color: #d8b899;
+  
+}
+
+#profile-detail,
+#profile-isi {
+  padding-left: 5px;
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  line-height: 1.2; 
+}
+
+#profile-isi {
+  margin-bottom: 5rem;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+#dateexperience{
+  color: var(--dl-color-primary-200);
+
+}
+
+.publication-date-color {
+  color: black;
+}
+
+main {
+  padding-top: 100px; 
+}
+
+
+.card:hover {
+  transform: translateY(-10px); 
+}
+
+.navbar .nav-link:hover {
+  color: var(--dl-color-primary-700);
+}
+
+.social-icons .social-icon:hover {
+  background-color: #d8b899;
+}
+.other-skills{
+color: white;
+}
+  
+.navbar .nav-link {
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+  color: var(--dl-color-primary-700);
+}
+
+.navbar .nav-link:active {
+  color: var(--dl-color-primary-700);
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.other-skills{
+  color: #595959;
+
+}
+
+
+.cardgap{
+  height: 15px;
+  background-color: transparent; 
+  border: none;
+}
+
+
+
+
